@@ -41,8 +41,8 @@ export default function WelcomeScreen() {
   return (
     <ScreenWrapper>
       <View className="h-full flex justify-around">
-        <View className="flex-row justify-center mt-10">
-            <Image source={require('../assets/images/welcome.gif')} className="h-10 w-10 shadow" />
+      <View className="flex-row justify-center items-center bg-blue-200 rounded-xl mx-4 mb-4">
+            <Image source={require('../assets/images/OIP.jpeg')} className="w-60 h-60" />
         </View>
         <View className="mx-5 mb-20">
             <Text className={`text-center font-bold text-4xl ${colors.heading} mb-10`}>Budget Buddy</Text>
@@ -53,9 +53,7 @@ export default function WelcomeScreen() {
             <TouchableOpacity onPress={()=> navigation.navigate('SignUp')} className="shadow p-3 rounded-full mb-5" style={{backgroundColor: colors.button}}>
                 <Text className="text-center text-white text-lg font-bold">Sign Up</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={()=> signIn()} className="shadow p-3 rounded-full bg-white" >
-                
-            </TouchableOpacity>
+
         </View>
       </View>
     </ScreenWrapper>

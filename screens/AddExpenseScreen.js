@@ -52,10 +52,15 @@ export default function AddTripScreen(props) {
                 
                 <Text className={`${colors.heading} text-xl font-bold text-center`}>Add Expense</Text>
             </View>
-            
+            <View className="flex-row justify-center my-3 mt-5">
+                <Image className="h-40 w-40" source={require('../assets/images/expenseBanner.png')} />
+            </View>
             <View className="space-y-2 mx-2">
                 <Text className={`${colors.heading} text-lg font-bold`}>For What?</Text>
                 <TextInput value={title} onChangeText={value=> setTitle(value)} className="p-4 bg-white rounded-full mb-3" />
+                <View className="flex-row justify-center my-3 mt-5">
+                <Image className="h-40 w-40" source={require('../assets/images/4.png')} />
+              </View>
                 <Text  className={`${colors.heading} text-lg font-bold`}>How Much?</Text>
                 <TextInput value={amount} onChangeText={value=> setAmount(value)} className="p-4 bg-white rounded-full mb-3" />
             </View>

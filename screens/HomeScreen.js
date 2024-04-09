@@ -8,6 +8,7 @@ import { signOut } from 'firebase/auth';
 import { auth, tripsRef } from '../configuration/firebase';
 import { useSelector } from 'react-redux';
 import { getDoc, getDocs, query, where } from 'firebase/firestore';
+import randomImage from '../assets/images/randomImage';
 
 const items = [
     {
@@ -67,7 +68,9 @@ export default function HomeScreen() {
                 <Text className={colors.heading}>Logout</Text>
             </TouchableOpacity>
         </View>
-
+        <View className="flex-row justify-center items-center bg-blue-200 rounded-xl mx-4 mb-4">
+            <Image source={require('../assets/images/banner.png')} className="w-60 h-60" />
+        </View>
         <View className="px-4 space-y-3">
             <View className="flex-row justify-between items-center">
                 <Text className={`${colors.heading} font-bold text-xl`}>Recent Trips</Text>

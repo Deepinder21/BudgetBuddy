@@ -64,7 +64,9 @@ export default function TripExpensesScreen(props) {
                     </View>
                     
             </View>
-           
+            <View className="flex-row justify-center items-center rounded-xl mb-4">
+                <Image source={require('../assets/images/7.png')} className="w-80 h-80" />
+            </View>
             <View className=" space-y-3">
                 <View className="flex-row justify-between items-center">
                     <Text className={`${colors.heading} font-bold text-xl`}>Expenses</Text>

@@ -57,7 +57,7 @@ export default function SignInScreen() {
                 
                 <Text className={`${colors.heading} text-xl font-bold text-center`}>Sign In</Text>
             </View>
-            
+
             <View className="space-y-2 mx-2">
                 <Text className={`${colors.heading} text-lg font-bold`}>Email</Text>
                 <TextInput value={email} onChangeText={value=> setEmail(value)} className="p-4 bg-white rounded-full mb-3" />
