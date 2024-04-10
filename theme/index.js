@@ -1,6 +1,6 @@
 export const colors = {
-    heading: 'text-gray-700',
-    button: '#50C878'
+    heading: 'text-blue-900',
+    button: 'orange',
 }
 export const categoryBG = {
     food: '#E1D3EE',

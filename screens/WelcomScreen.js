@@ -45,7 +45,7 @@ export default function WelcomeScreen() {
             <Image source={require('../assets/images/OIP.jpeg')} className="w-60 h-60" />
         </View>
         <View className="mx-5 mb-20">
-            <Text className={`text-center font-bold text-4xl ${colors.heading} mb-10`}>Budget Buddy</Text>
+            <Text className={"text-center font-bold text-4xl text-blue-900 mb-10"}>Budget Buddy</Text>
             
             <TouchableOpacity onPress={()=> navigation.navigate('SignIn')} className="shadow p-3 rounded-full mb-5" style={{backgroundColor: colors.button}}>
                 <Text className="text-center text-white text-lg font-bold">Sign In</Text>
